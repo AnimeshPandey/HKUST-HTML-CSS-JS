@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html>
+	<head>
+    <style>
+      fieldset {
+        background:lightyellow;
+        border:10px solid yellow;
+        margin-bottom:10px;
+        width: 720px;
+      }
+
+      label {
+        width: 180px;
+        display:inline-block;
+        text-align: right;
+        vertical-align: top;
+      }
+
+      textarea {
+         width:360px;
+         height:50px;
+      }
+
+      .rangetext {
+        text-align: center;
+        vertical-align: top;
+      }
+
+      .autowidth {
+        width: auto;
+      }
+
+      label:hover {
+        font-size:25px;
+      }
+
+      input:hover {
+        font-size:20px;
+      }
+    </style>
+	</head>
+
+	<body>
+		<h2>Please Enter Your Details For Our Dating Website!</h2>
+		<form>
+  			<fieldset>
+    			<legend>Your Face</legend>
+    			<label for="avatar">Your image:</label>
+    				<input type="file" id="avatar" name="avatar"><br>
+    			<label for="preview">Image Preview: </label>
+    				<img id="preview">
+  			</fieldset>
+  			
+  			<fieldset>
+    			<legend>Your General Details</legend>
+    			<label for="name">Name:</label>
+    				<input type="text" id="name" name="name" required><br>
+    			<label for="gender"><span class="autowidth">Gender:</span></label>
+    				<input type="radio" name="gender" value="male" required> Male
+  					<input type="radio" name="gender" value="female" required> Female<br>
+    			<label for="age">Age: </label>
+    				<input type="number" name="age" required><br>
+    			<label for="dob">Date of birth: </label>
+    				<input type="date" name="dob"><br>
+    			<label for="color">Favorite color:</label>
+    				<input type="color" name="color"><br>
+    			<label for="country">Which country: </label>
+    				<select name="country">
+    					<option value="nosel">No Selection</option>
+    					<option value="usa">USA</option>
+    					<option value="china">China</option>
+    					<option value="india">India</option>
+    					<option value="england">England</option>
+    					<option value="italy">Italy</option>
+  					</select>
+  			</fieldset>
+
+  			<fieldset class="">
+    			<legend>Your Indicators</legend>
+    			<label for="height">Height: </label>
+    				<span class="rangetext">Short<input type="range" min="0" max="100" name="height">Tall</span><br>
+    			<label for="salary">Salary: </label>
+    				<span class="rangetext">Poor<input type="range" min="0" max="100" name="salary">Rich</span><br>
+  			</fieldset>
+
+  			<fieldset>
+    			<legend>Your Contact Information</legend>
+    			<label for="name">Email: </label>
+    				<input type="email" name="email" required><br>
+    			<label for="mob">Mobile: </label>
+    				<input type="tel" name="mob"><br>
+    			<label for="address">Address: </label>
+    				<textarea name="address"></textarea>><br>
+    			<label for="contact"><span class="autowidth">Method to contact you: </span></label>
+    				<input type="checkbox" name="contact"> Email
+  					<input type="checkbox" name="contact"> WhatsApp
+  					<input type="checkbox" name="contact"> In-app chat
+  			</fieldset>
+
+  			<input type="submit">
+		</form>
+
+    <script src="https://www.cse.ust.hk/~rossiter/dating_web_site.js"></script>
+	</body>
+
+
+</html>
